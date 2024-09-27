@@ -20,7 +20,7 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `bd_telefonia`
 --
-CREATE DATABASE IF NOT EXISTS `bd_telefonia` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+CREATE DATABASE IF NOT EXISTS `bd_telefonia`;
 USE `bd_telefonia`;
 
 -- --------------------------------------------------------
@@ -37,7 +37,7 @@ CREATE TABLE `clientes` (
   `calle_avenida` varchar(40) DEFAULT NULL,
   `no_casa` varchar(20) DEFAULT NULL,
   `zona` tinyint DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `clientes`
@@ -1557,7 +1557,7 @@ CREATE TABLE `lineas_telefonicas` (
   `meses_atraso` tinyint DEFAULT NULL,
   `plan_id` int DEFAULT NULL,
   `cliente_id` int DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ;
 
 --
 -- Volcado de datos para la tabla `lineas_telefonicas`
@@ -3075,7 +3075,7 @@ CREATE TABLE `planes` (
   `pago_mensual` float(8,2) DEFAULT NULL,
   `cantidad_minutos` int DEFAULT NULL,
   `cantidad_mensajes` int DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `planes`
@@ -3101,7 +3101,7 @@ CREATE TABLE `users_types` (
   `user_type_id` tinyint NOT NULL,
   `name` varchar(70) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `description` varchar(300) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `users_types`
@@ -3130,7 +3130,7 @@ CREATE TABLE `usuarios` (
   `created_at` datetime NOT NULL,
   `updated_at` datetime NOT NULL,
   `user_type_id` tinyint NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `usuarios`
